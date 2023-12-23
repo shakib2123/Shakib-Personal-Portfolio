@@ -11,7 +11,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col-reverse md:flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
     >
       <div className="w-full h-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -24,11 +24,11 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
-          <span>
+          <span className="text-gray-200">
             Providing
-            <span className="text-transparent bg-clip-text bg-gradient-to-r bg-purple-500 to-cyan-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
               the best{" "}
             </span>
