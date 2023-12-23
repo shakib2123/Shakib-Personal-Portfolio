@@ -7,7 +7,6 @@ import {
 } from "../../constants";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
-import SkillSection from "./SkillSection";
 
 const Skills = () => {
   return (

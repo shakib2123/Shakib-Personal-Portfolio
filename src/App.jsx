@@ -1,3 +1,4 @@
+import Encryption from "./components/main/Encryption";
 import Hero from "./components/main/Hero";
 import Navbar from "./components/main/Navbar";
 import Skills from "./components/main/Skills";
@@ -11,6 +12,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <Skills />
+        <Encryption />
       </div>
     </main>
   );
