@@ -18,7 +18,7 @@ const HeroContent = () => {
       animate="visible"
       className="flex flex-col-reverse lg:flex-row items-center justify-center gap-3 px-4 mt-0 w-full z-40"
     >
-      <div className="w-full h-full flex flex-col gap-5 justify-center m-auto text-start flex-1">
+      <div className="w-full h-full flex flex-col gap-5 justify-center m-auto text-start ">
         <motion.div
           variants={slideInFromTop}
           className="welcome-box  py-[15px]  px-[10px] border border-[#4042f88b] opacity-[0.9]"
@@ -39,9 +39,13 @@ const HeroContent = () => {
             i&apos;m a{" "}
             <TypeAnimation
               sequence={[
+                "MERN Stack Developer",
+                2000,
                 "Front-end Developer",
                 2000,
-                "MERN Stack Developer",
+                "React Developer",
+                2000,
+                "Back-end Developer",
                 2000,
               ]}
               speed={50}
@@ -58,23 +62,25 @@ const HeroContent = () => {
           friendly Website development. Check out my projects and skills.
         </motion.p>
         <motion.a
+          download={"Shakib-Web-Resume"}
+          href="/Shakib-Web-Resume.pdf"
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] border-[3px] border-[#4042f88b]"
         >
-          Learn More!
+          Download Resume
         </motion.a>
       </div>
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full lg:h-[475px] flex justify-center items-center relative flex-1"
+        className="w-full h-full lg:h-[475px] flex justify-center items-center relative"
       >
         <Canvas>
           <Suspense fallback={null}>
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
-            <Sphere args={[1, 400, 600]} scale={2.5}>
+            <Sphere args={[1, 400, 600]} scale={2.6}>
               <MeshDistortMaterial
                 color="#270566"
                 attach="material"

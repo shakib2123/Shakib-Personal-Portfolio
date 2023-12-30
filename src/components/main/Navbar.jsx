@@ -1,14 +1,14 @@
-import { Socials } from "../../constants";
-
+import Facebook from "../../assets/facebook.svg";
+import Discord from "../../assets/discord.svg";
 const Navbar = () => {
   return (
     <div
       id="home"
       className="w-full  shadow-sm shadow-purple-600  bg-[#03001417] backdrop-blur-sm h-[65px] z-[150] "
     >
-      <div className="max-w-7xl mx-auto z-50 px-3">
+      <div className="max-w-7xl mx-auto px-3">
         <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-          <a href="#about" className="h-auto w-auto flex flex-row items-center"> 
+          <a href="#about" className="h-auto w-auto flex flex-row items-center">
             <img
               src="/NavLogo.png"
               alt="logo"
@@ -20,15 +20,23 @@ const Navbar = () => {
             </span>
           </a>
 
-          <div className="flex flex-row gap-5">
-            {Socials.map((social) => (
+          <div className="flex flex-row gap-5 z-50">
+            <a target="_blank"
+              href="https://web.facebook.com/profile.php?id=100092629614657"
+            >
               <img
-                src={social.src}
-                alt={social.name}
-                key={social.name}
-                className="h-[20px] w-[20px] md:h-[24px] md:w-[24px] cursor-pointer"
+                src={Facebook}
+                alt="Facebook"
+                className="h-[20px] w-[20px] md:h-[24px] md:w-[24px] "
               />
-            ))}
+            </a>
+            <a  href="#">
+              <img
+                src={Discord}
+                alt="Discord"
+                className="h-[20px] w-[20px] md:h-[24px] md:w-[24px] "
+              />
+            </a>
           </div>
         </div>
       </div>
