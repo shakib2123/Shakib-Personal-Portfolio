@@ -6,14 +6,12 @@ import Navbar from "./components/main/Navbar";
 import Projects from "./components/main/Projects";
 import Skills from "./components/main/Skills";
 import StarsCanvas from "./components/main/StarBackground";
-import LeftImage from "./components/sub/LeftImage";
 
 const App = () => {
   return (
     <main className="h-full w-full">
       <div className="flex  flex-col gap-20">
         <StarsCanvas />
-        <LeftImage/>
         <Navbar />
         <Hero />
         <NavMenus />

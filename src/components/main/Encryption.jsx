@@ -22,20 +22,16 @@ const Encryption = () => {
           <img
             src="/LockTop.png"
             alt="Lock top"
-            // width={50}
-            // height={50}
             className="translate-y-5 transition-all duration-200 group-hover:translate-y-8 md:group-hover:translate-y-14 w-8 md:w-[50px] h-8 md:h-[50px]"
           />
           <img
             src="/LockMain.png"
             alt="Lock main"
-            // width={70}
-            // height={70}
             className="z-10 w-10 md:w-[70px] h-10 md:h-[70px]"
           />
         </div>
-        <div className="welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9] ">
-          <h1 className="welcome-text text-[12px]">Encryption</h1>
+        <div className="welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border border-[#7042f88b] opacity-[0.9] ">
+          <h1 className="welcome-text text-[12px]">Secure</h1>
         </div>
       </div>
 

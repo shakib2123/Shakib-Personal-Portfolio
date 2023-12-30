@@ -11,7 +11,7 @@ const SkillText = () => {
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <motion.div
         variants={slideInFromTop}
-        className="welcome-box  py-[15px]  px-[10px] border-[#4042f88b] opacity-[0.9]"
+        className="welcome-box  py-[15px]  px-[10px] border border-[#4042f88b] opacity-[0.9]"
       >
         <IoSparkles className="text-[#b49bff] mr-[10px] h-5 w-5 " />
         <h1 className="welcome-text text-[14px]">Moving On Next Js</h1>

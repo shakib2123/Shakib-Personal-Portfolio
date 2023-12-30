@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Orbitron:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-
+.text-primary{
+  font-family: 'Orbitron', sans-serif;
+}
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
@@ -64,8 +66,10 @@
   display: none;
 }
 
-
-
 html {
   scroll-behavior: smooth;
+}
+
+.translate-z-0 {
+  transform: translateZ(0px);
 }

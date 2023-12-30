@@ -4,13 +4,93 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "../../utils/motion";
+import "./HeroContent.css";
 import { IoSparkles } from "react-icons/io5";
-
+import { TypeAnimation } from "react-type-animation";
+import headerImg from "../../assets/header-img.svg";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
 const HeroContent = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      className="flex flex-col-reverse lg:flex-row items-center justify-center gap-3 px-4 mt-0 w-full z-40"
+    >
+      <div className="w-full h-full flex flex-col gap-5 justify-center m-auto text-start flex-1">
+        <motion.div
+          variants={slideInFromTop}
+          className="welcome-box  py-[15px]  px-[10px] border border-[#4042f88b] opacity-[0.9]"
+        >
+          <IoSparkles className="text-[#b49bff] mr-[10px] h-5 w-5 " />
+          <h1 className="welcome-text text-[14px] ">Web Developer Portfolio</h1>
+        </motion.div>
 
-    </div>
+        <motion.div
+          variants={slideInFromLeft(0.5)}
+          className="flex flex-col gap-2 mt-1  font-bold max-w-[600px] w-auto h-auto"
+        >
+          <span className="text-[30px] md:text-5xl text-gray-200 capitalize space-y-0 md:space-y-4">
+            <p>Hello, I&apos;m Shakib</p>
+          </span>{" "}
+          <span className="text-[23px] md:text-[37px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 capitalize ">
+            {" "}
+            i&apos;m a{" "}
+            <TypeAnimation
+              sequence={[
+                "Front-end Developer",
+                2000,
+                "MERN Stack Developer",
+                2000,
+              ]}
+              speed={50}
+              wrapper="span"
+              repeat={Infinity}
+            />
+          </span>
+        </motion.div>
+        <motion.p
+          variants={slideInFromLeft(0.8)}
+          className="text-lg text-gray-400 max-w-[600px]"
+        >
+          I&apos;m a Web Developer with experience in responsive and user
+          friendly Website development. Check out my projects and skills.
+        </motion.p>
+        <motion.a
+          variants={slideInFromLeft(1)}
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+        >
+          Learn More!
+        </motion.a>
+      </div>
+
+      <motion.div
+        variants={slideInFromRight(0.8)}
+        className="w-full h-full lg:h-[475px] flex justify-center items-center relative flex-1"
+      >
+        <Canvas>
+          <Suspense fallback={null}>
+            <OrbitControls enableZoom={false} />
+            <ambientLight intensity={1} />
+            <directionalLight position={[3, 2, 1]} />
+            <Sphere args={[1, 400, 600]} scale={2.5}>
+              <MeshDistortMaterial
+                color="#270566"
+                attach="material"
+                distort={0.5}
+                speed={2}
+              />
+            </Sphere>
+          </Suspense>
+        </Canvas>
+        <img
+          src={headerImg}
+          alt="space icons"
+          className="img w-full md:w-[70%] absolute"
+        />
+      </motion.div>
+    </motion.div>
   );
 };
 
