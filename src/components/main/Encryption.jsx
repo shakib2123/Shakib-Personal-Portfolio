@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { slideInFromTop } from "../../utils/motion";
 const Encryption = () => {
   return (
-    <div className="max-w-7xl mx-auto flex flex-row relative items-center justify-center w-full h-full min-h-[60vh] md:min-h-[80vh]">
+    <div className="max-w-7xl mx-auto flex flex-row relative items-center justify-center w-full h-full min-h-[400px] md:min-h-[600px]">
       <div className="absolute w-auto h-auto top-0 z-[5]">
         <motion.div
           variants={slideInFromTop}
@@ -17,20 +17,20 @@ const Encryption = () => {
         </motion.div>
       </div>
 
-      <div className=" flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-full h-auto">
+      <div className=" flex flex-col items-center justify-center translate-y-[-50px] absolute z-[50] w-full h-auto">
         <div className=" flex flex-col items-center cursor-pointer group w-auto h-auto overflow-hidden">
           <img
             src="/LockTop.png"
             alt="Lock top"
-            className="translate-y-5 transition-all duration-200 group-hover:translate-y-8 md:group-hover:translate-y-14 w-8 md:w-[50px] h-8 md:h-[50px]"
+            className="translate-y-5 transition-all duration-200 group-hover:translate-y-[42px] md:group-hover:translate-y-[58px] lg:group-hover:translate-y-[45px] w-7 md:w-[45px] h-8 md:h-[45px] mt-20 lg:mt-0"
           />
           <img
             src="/LockMain.png"
             alt="Lock main"
-            className="z-10 w-10 md:w-[70px] h-10 md:h-[70px]"
+            className="z-10 w-9 md:w-[60px] h-10 md:h-[60px] mt-2 lg:mt-0"
           />
         </div>
-        <div className="welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border border-[#7042f88b] opacity-[0.9] ">
+        <div className="welcome-box px-[15px] py-[4px] z-[20] my-[12px] md:my-[20px] border border-[#7042f88b] opacity-[0.9] ">
           <h1 className="welcome-text text-[12px]">Secure</h1>
         </div>
       </div>

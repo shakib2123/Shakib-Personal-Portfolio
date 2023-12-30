@@ -23,7 +23,7 @@ export const navData = [
 const NavMenus = () => {
   return (
     <div className="flex flex-col items-center lg:justify-center gap-y-4 fixed h-max bottom-0 mt-auto lg:right-[2%] z-[1000] top-0 w-full lg:w-16 lg:max-w-md lg:h-screen">
-      <div className="z-50 flex w-full lg:flex-col items-center justify-between lg:justify-center gap-10 px-4 md:px-40 lg:px-0 h-[70px] lg:h-max py-8 bg-white/10 text-white backdrop-blur-sm text-2xl lg:text-xl lg:rounded-full ">
+      <div className="z-50 flex w-full lg:flex-col items-center justify-between lg:justify-center gap-10 px-4 md:px-40 lg:px-0 h-[60px] lg:h-max py-8 bg-white/10 text-white backdrop-blur-sm text-2xl lg:text-xl lg:rounded-full ">
         {navData.map((link, index) => (
           <a
             className={`hover:cursor-pointer transition-all duration-300 hover:text-[#F13024] relative flex items-center group `}

@@ -1,5 +1,6 @@
 import Facebook from "../../assets/facebook.svg";
 import Discord from "../../assets/discord.svg";
+import Github from '../../assets/gitwhite.png'
 const Navbar = () => {
   return (
     <div
@@ -21,7 +22,8 @@ const Navbar = () => {
           </a>
 
           <div className="flex flex-row gap-5 z-50">
-            <a target="_blank"
+            <a
+              target="_blank"
               href="https://web.facebook.com/profile.php?id=100092629614657"
             >
               <img
@@ -30,7 +32,14 @@ const Navbar = () => {
                 className="h-[20px] w-[20px] md:h-[24px] md:w-[24px] "
               />
             </a>
-            <a  href="#">
+            <a target="_blank" href="https://github.com/shakib2123">
+              <img
+                src={Github}
+                alt="Github"
+                className="h-[20px] w-[20px] md:h-[24px] md:w-[24px] "
+              />
+            </a>
+            <a href="#">
               <img
                 src={Discord}
                 alt="Discord"

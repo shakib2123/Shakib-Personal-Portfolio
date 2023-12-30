@@ -34,7 +34,7 @@ const HeroContent = () => {
           <span className="text-[30px] md:text-5xl text-gray-200 capitalize space-y-0 md:space-y-4">
             <p>Hello, I&apos;m Shakib</p>
           </span>{" "}
-          <span className="text-[23px] md:text-[37px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 capitalize ">
+          <span className="text-[23px] md:text-[37px] text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500 capitalize ">
             {" "}
             i&apos;m a{" "}
             <TypeAnimation
@@ -65,7 +65,7 @@ const HeroContent = () => {
           download={"Shakib-Web-Resume"}
           href="/Shakib-Web-Resume.pdf"
           variants={slideInFromLeft(1)}
-          className="py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] border-[3px] border-[#4042f88b]"
+          className="py-2 md:py-3 px-3 md:px-4 button-primary transition-all duration-300  text-center text-white font-semibold cursor-pointer rounded-lg w-fit border-[3px] border-[#4042f88b]"
         >
           Download Resume
         </motion.a>
@@ -82,7 +82,7 @@ const HeroContent = () => {
             <directionalLight position={[3, 2, 1]} />
             <Sphere args={[1, 400, 600]} scale={2.6}>
               <MeshDistortMaterial
-                color="#270566"
+                color="#15045f"
                 attach="material"
                 distort={0.5}
                 speed={2}
@@ -93,7 +93,7 @@ const HeroContent = () => {
         <img
           src={headerImg}
           alt="space icons"
-          className="img w-full md:w-[70%] absolute"
+          className="img w-[80%] md:w-[70%] absolute"
         />
       </motion.div>
     </motion.div>

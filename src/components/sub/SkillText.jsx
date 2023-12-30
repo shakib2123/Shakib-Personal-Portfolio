@@ -14,19 +14,19 @@ const SkillText = () => {
         className="welcome-box  py-[15px]  px-[10px] border border-[#4042f88b] opacity-[0.9]"
       >
         <IoSparkles className="text-[#b49bff] mr-[10px] h-5 w-5 " />
-        <h1 className="welcome-text text-[14px]">Moving On Next Js</h1>
+        <h1 className="welcome-text text-[14px]">Moving On Next JS</h1>
       </motion.div>
 
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="text-[30px] text-white font-medium text-center mt-[10px] mb-[15px]"
+        className="text-[20px] md:text-4xl lg:text-5xl text-white font-medium text-center mt-[10px] mb-[15px]"
       >
         Making apps with modern technologies.
       </motion.div>
 
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="cursive text-[20px] text-gray-200 text-center mt-10 mb-[10px]"
+        className="cursive text-[20px] md:text-3xl lg:text-4xl text-gray-200 text-center mt-4 mb-[10px]"
       >
         Never miss a task, deadline or idea
       </motion.div>

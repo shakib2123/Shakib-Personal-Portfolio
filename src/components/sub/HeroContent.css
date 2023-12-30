@@ -1,6 +1,6 @@
 .img {
   margin: auto;
-  animation: animate 2s infinite ease alternate;
+  animation: animate 2.5s infinite ease alternate;
 }
 
 @keyframes animate {
