@@ -117,14 +117,32 @@ export const Frontend_skill = [
     height: 80,
   },
   {
+    skill_name: "Next JS",
+    Image: "/next.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Three JS",
+    Image: "/three.png",
+    width: 80,
+    height: 80,
+  },
+  
+];
+
+export const Backend_skill = [
+  {
     skill_name: "Fire base",
     Image: "/Firebase.png",
     width: 55,
     height: 55,
+  },{
+    skill_name: "Stripe js",
+    Image: "/stripe.webp",
+    width: 40,
+    height: 40,
   },
-];
-
-export const Backend_skill = [
   {
     skill_name: "Node js",
     Image: "/node-js.png",
@@ -138,26 +156,20 @@ export const Backend_skill = [
     height: 80,
   },
   {
-    skill_name: "Stripe js",
-    Image: "/stripe.webp",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "JWT",
-    Image: "/jwt.png",
-    width: 40,
-    height: 40,
-  },
-  {
     skill_name: "Mongo db",
     Image: "/mongodb.png",
     width: 40,
     height: 40,
   },
+  {
+    skill_name: "Mongoose",
+    Image: "/mongoose.png",
+    width: 40,
+    height: 40,
+  },
 ];
 
-export const Full_stack = [
+export const Tools = [
   // {
   //   skill_name: "React Native",
   //   Image: "/ReactNative .png",
@@ -180,6 +192,12 @@ export const Full_stack = [
   {
     skill_name: "VS Code",
     Image: "/vscode.png",
+    width: 50,
+    height: 50,
+  },
+  {
+    skill_name: "Git",
+    Image: "/git.png",
     width: 50,
     height: 50,
   },

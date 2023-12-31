@@ -1,3 +1,4 @@
+import Contact from "./components/main/Contact";
 import Encryption from "./components/main/Encryption";
 import Footer from "./components/main/Footer";
 import Hero from "./components/main/Hero";
@@ -18,6 +19,7 @@ const App = () => {
         <Skills />
         <Encryption />
         <Projects />
+        <Contact />
         <Footer />
       </div>
     </main>
