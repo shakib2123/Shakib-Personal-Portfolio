@@ -93,7 +93,7 @@ const HeroContent = () => {
         <img
           src={headerImg}
           alt="space icons"
-          className="img w-[80%] md:w-[70%] absolute"
+          className="img w-[80%] md:w-[60%] lg:w-[70%] absolute"
         />
       </motion.div>
     </motion.div>

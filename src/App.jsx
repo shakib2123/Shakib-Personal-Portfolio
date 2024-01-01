@@ -1,3 +1,4 @@
+import About from "./components/main/About";
 import Contact from "./components/main/Contact";
 import Encryption from "./components/main/Encryption";
 import Footer from "./components/main/Footer";
@@ -19,6 +20,7 @@ const App = () => {
         <Skills />
         <Encryption />
         <Projects />
+        <About />
         <Contact />
         <Footer />
       </div>

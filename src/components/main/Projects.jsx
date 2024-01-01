@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div
       id="works"
-      className="max-w-7xl mx-auto  py-20 z-50 px-3 flex flex-col lg:flex-row gap-8 items-center"
+      className="max-w-7xl mx-auto pt-24 md:pt-40  pb-0 md:pb-20 z-50 px-3 space-y-10"
     >
       {/* text */}
       <motion.div
@@ -16,17 +16,17 @@ const Projects = () => {
         initial="hidden"
         animate="show"
         exit={"hidden"}
-        className="flex flex-col gap-4 justify-normal flex-[1]"
+        className="flex flex-col gap-4 text-center"
       >
-        <h1 className="text-3xl lg:text-[45px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500 uppercase text-primary space-y-2 lg:space-y-5">
-          <p>My Latest </p> <p>Works</p>
+        <h1 className="text-3xl lg:text-[45px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500 uppercase text-primary">
+          My Latest Works
         </h1>
-        <p className="text-gray-300">
+        <p className="text-gray-300 w-full md:w-[70%] lg:w-[60%] mx-auto">
           Discover my latest projects – a snapshot of creativity, innovation,
           and seamless design. Explore a project that speaks to my commitment to
           excellence in web development.
         </p>
-        <a href="https://github.com/shakib2123?tab=repositories">
+        <a  href="https://github.com/shakib2123?tab=repositories">
           <button className="py-2 md:py-3 px-3 md:px-4 button-primary text-center text-white cursor-pointer rounded-lg w-fit border-[3px] border-[#4042f88b] capitalize">
             See My All Projects
           </button>
@@ -37,7 +37,7 @@ const Projects = () => {
         initial="hidden"
         animate="show"
         exit={"hidden"}
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-[2]"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-[2]"
       >
         {/* project-1 */}
         <ProjectCard
