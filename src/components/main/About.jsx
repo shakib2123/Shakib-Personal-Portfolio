@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { slideInFromLeft } from "../../utils/motion";
 import certificate from "../../assets/certificate.png";
 import { FaEye } from "react-icons/fa";
+
 //  data
 const aboutData = [
   {
@@ -75,13 +76,14 @@ const About = () => {
       <div className="flex flex-col md:flex-row  gap-6">
         <motion.div
           variants={slideInFromLeft(0.4)}
-          className="hidden w-full h-full lg:h-[475px] lg:flex justify-center items-center relative flex-1"
-        >
+          
+          className="hidden w-full h-full lg:h-[475px] lg:flex justify-center items-center relative flex-1 "
+        > 
           <img src={avatar} alt="contact image" className="w-[500px] h-full " />
         </motion.div>
         <div className="max-w-7xl mx-auto h-full flex-col lg:flex-row gap-x-6 text-white flex-1">
           <div className="flex-1 flex flex-col justify-center items-center py-4 space-y-2">
-            <h2 className="text-2xl md:text-4xl text-gray-200 font-bold text-center">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl text-gray-200 font-bold text-center">
               Captivating stories birth{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">
                 magnificent
@@ -116,7 +118,7 @@ const About = () => {
                     {/* title */}
                     <div
                       className={`text-sm md:text-lg text-gray-200 flex items-start gap-2 ${
-                        item?.image || "bg-[#4042f88b]/25 p-1 rounded-xl"
+                        item?.image ? ' grid grid-cols-2 gap-4': "bg-[#4042f88b]/25 p-1 rounded-xl"
                       } `}
                     >
                       <IoMdCheckmarkCircleOutline
@@ -131,7 +133,7 @@ const About = () => {
                       </span>
                       {item?.image && (
                         <>
-                          <div className="w-[70%] lg:w-[50%] mx-auto relative overflow-hidden border-2 bg-gray-400 group">
+                          <div className="relative overflow-hidden border-2 bg-gray-400 group">
                             <img
                               src={item?.image}
                               alt="certificate"
@@ -147,6 +149,7 @@ const About = () => {
                               </a>
                             </div>
                           </div>
+                          
                         </>
                       )}
                     </div>

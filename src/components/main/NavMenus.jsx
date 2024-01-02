@@ -6,11 +6,11 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
-
+import { FaTools } from "react-icons/fa";
 export const navData = [
   { name: "Home", path: "#home", icon: <HiHome /> },
   { name: "About", path: "#about", icon: <HiUser /> },
-  { name: "Skills", path: "#skills", icon: <HiRectangleGroup /> },
+  { name: "Skills", path: "#skills", icon: <FaTools /> },
   { name: "Works", path: "#works", icon: <HiViewColumns /> },
   // {
   //   name: "Testimonials",
@@ -26,7 +26,7 @@ const NavMenus = () => {
       <div className="z-50 flex w-full lg:flex-col items-center justify-between lg:justify-center gap-10 px-4 md:px-40 lg:px-0 h-[60px] lg:h-max py-8 bg-white/10 text-white backdrop-blur-sm text-2xl lg:text-xl lg:rounded-full ">
         {navData.map((link, index) => (
           <a
-            className={`hover:cursor-pointer transition-all duration-300 hover:text-[#F13024] relative flex items-center group `}
+            className={`hover:cursor-pointer transition-all duration-300 hover:text-pink-600 relative flex items-center group `}
             key={index}
             href={link.path}
           >
