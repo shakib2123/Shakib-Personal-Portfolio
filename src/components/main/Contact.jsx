@@ -123,7 +123,7 @@ const Contact = () => {
       <div className=" flex flex-col lg:flex-row items-center justify-between gap-4">
         <motion.div
           variants={slideInFromRight(0.4)}
-          className="w-full min-h-[300px] md:min-h-[410px] lg:h-[475px] lg:w-[550px] flex justify-center items-center relative flex-1"
+          className="w-full min-h-[300px] md:min-h-[411px] lg:h-[475px] lg:w-[550px] flex justify-center items-center relative flex-1"
         >
           <Canvas>
             <Suspense fallback={null}>
