@@ -48,7 +48,7 @@ const HeroContent = () => {
                 "Back-end Developer",
                 2000,
               ]}
-              speed={50}
+              speed={40}
               wrapper="span"
               repeat={Infinity}
             />
@@ -73,7 +73,7 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full lg:h-[475px] flex justify-center items-center relative"
+        className="w-full h-[475px] flex justify-center items-center relative overflow-hidden"
       >
         <Canvas>
           <Suspense fallback={null}>

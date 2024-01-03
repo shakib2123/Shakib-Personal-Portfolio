@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 // image
 import avatar from "../../assets/avatar.png";
@@ -10,6 +10,8 @@ import { motion } from "framer-motion";
 import { slideInFromLeft } from "../../utils/motion";
 import certificate from "../../assets/certificate.png";
 import { FaEye } from "react-icons/fa";
+import { Canvas } from "@react-three/fiber";
+import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
 
 //  data
 const aboutData = [
@@ -76,10 +78,29 @@ const About = () => {
       <div className="flex flex-col md:flex-row  gap-6">
         <motion.div
           variants={slideInFromLeft(0.4)}
-          
           className="hidden w-full h-full lg:h-[475px] lg:flex justify-center items-center relative flex-1 "
-        > 
-          <img src={avatar} alt="contact image" className="w-[500px] h-full " />
+        >
+          {" "}
+          <Canvas>
+            <Suspense fallback={null}>
+              <OrbitControls enableZoom={false} />
+              <ambientLight intensity={1} />
+              <directionalLight position={[3, 2, 1]} />
+              <Sphere args={[1, 400, 600]} scale={2.9}>
+                <MeshDistortMaterial
+                  color="#15045f"
+                  attach="material"
+                  distort={0.5}
+                  speed={2}
+                />
+              </Sphere>
+            </Suspense>
+          </Canvas>
+          <img
+            src={avatar}
+            alt="contact image"
+            className="w-[500px] h-full img  absolute top-0"
+          />
         </motion.div>
         <div className="max-w-7xl mx-auto h-full flex-col lg:flex-row gap-x-6 text-white flex-1">
           <div className="flex-1 flex flex-col justify-center items-center py-4 space-y-2">
@@ -118,7 +139,9 @@ const About = () => {
                     {/* title */}
                     <div
                       className={`text-sm md:text-lg text-gray-200 flex items-start gap-2 ${
-                        item?.image ? ' grid grid-cols-2 gap-4': "bg-[#4042f88b]/25 p-1 rounded-xl"
+                        item?.image
+                          ? " grid grid-cols-2 gap-4"
+                          : "bg-[#4042f88b]/25 p-1 rounded-xl"
                       } `}
                     >
                       <IoMdCheckmarkCircleOutline
@@ -141,15 +164,16 @@ const About = () => {
                             />
                             <div className="absolute top-0 left-0 group-hover:bg-black/50 w-full h-full transition-all duration-300"></div>
                             <div className="absolute -bottom-full left-8 group-hover:bottom-5 transition-all duration-700 z-50 ">
-                              <a target="_blank"
+                              <a
+                                target="_blank"
                                 href="https://drive.google.com/file/d/1_GR34a3E07cdK_HBn--R8NDJG780R6Bu/view?usp=sharing"
-                                title="View" rel="noreferrer"
+                                title="View"
+                                rel="noreferrer"
                               >
                                 <FaEye className="text-3xl" />
                               </a>
                             </div>
                           </div>
-                          
                         </>
                       )}
                     </div>
