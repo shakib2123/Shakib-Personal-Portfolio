@@ -2,13 +2,19 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid #6de5fa;
+  border: 1px solid #48e3ff;
   position: fixed;
+  top: 0;
+left: 0;
   z-index: 999;
+  transform: translate(-50%, -50%);
 }
+
+
 
 @media screen and (max-width: 480px) {
   .cursor {
     display: none;
   }
+ 
 }

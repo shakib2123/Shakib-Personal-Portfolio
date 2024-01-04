@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import './Cursor.css'
+import "./Cursor.css";
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -17,10 +17,13 @@ const Cursor = () => {
   }, []);
 
   return (
-    <motion.div
-      className="cursor"
-      animate={{ x: position.x + 10, y: position.y + 10 }}
-    ></motion.div>
+    <div className="fixed top-0 left-0 z-[999] overflow-hidden w-[50px]">
+      <motion.div
+        className="cursor"
+        animate={{ x: position.x+8, y: position.y+8 }}
+      ></motion.div>
+     
+    </div>
   );
 };
 

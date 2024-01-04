@@ -16,8 +16,9 @@ const App = () => {
     <main className="h-full w-full">
       <div className="flex  flex-col gap-20">
         <StarsCanvas />
-        <Cursor/>
+
         <Navbar />
+        <Cursor />
         <Hero />
         <NavMenus />
         <Skills />
