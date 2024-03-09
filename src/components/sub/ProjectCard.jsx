@@ -8,7 +8,7 @@ const ProjectCard = ({ item }) => {
   }, []);
 
   return (
-    <section className="flex justify-center items-center min-h-[80vh] max-w-7xl">
+    <section className="flex justify-center items-center min-h-[80vh] 2xl:min-h-[50vh] max-w-7xl">
       <div className="flex items-center justify-center h-full w-full overflow-hidden">
         <div className="m-auto h-full flex flex-col lg:flex-row items-center justify-center  gap-2 lg:gap-12">
           <div
@@ -28,10 +28,10 @@ const ProjectCard = ({ item }) => {
             data-aos-duration="600"
             className="flex-1 flex flex-col gap-[20px]"
           >
-            <h2 className="text-gray-200 text-2xl md:text-6xl font-semibold">
+            <h2 className="text-gray-200 text-2xl md:text-3xl lg:text-6xl font-semibold">
               {item.title}
             </h2>
-            <p className="text-gray-300 text-left">{item.description}</p>
+            <p className="text-gray-400 text-left">{item.description}</p>
             <div className="flex gap-6 md:gap-16">
               <a
                 href={item.site}

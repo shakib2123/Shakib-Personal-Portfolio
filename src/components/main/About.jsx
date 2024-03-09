@@ -8,65 +8,10 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 // framer motion
 import { motion } from "framer-motion";
 import { slideInFromLeft } from "../../utils/motion";
-import certificate from "../../assets/certificate.png";
 import { FaEye } from "react-icons/fa";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
-
-//  data
-const aboutData = [
-  {
-    title: "skills",
-    info: [
-      {
-        title: "Front-End Development",
-      },
-      {
-        title: "MERN Stack Development",
-      },
-      {
-        title: "Back-End Development",
-      },
-    ],
-  },
-
-  {
-    title: "experience",
-    info: [
-      {
-        title: "Frontend Framework Adoption",
-      },
-      {
-        title: "Accessibility Implementation",
-      },
-      {
-        title: "Responsive Design Complexities",
-      },
-      {
-        title: "Performance Optimization",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title:
-          "College (HSC - Higher Secondary Certificate) - Sengerchar Govt. College",
-        stage: "(2023 - Present)",
-      },
-      {
-        title:
-          "Complete Web Development Course With Jhankar Mahbub - Programming Hero",
-        stage: "(2023 - 2024)",
-      },
-    ],
-  },
-  {
-    title: "Achievements",
-    info: [{ image: certificate }],
-  },
-];
+import { aboutData } from "../../constants";
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -80,7 +25,6 @@ const About = () => {
           variants={slideInFromLeft(0.4)}
           className="hidden w-full h-full lg:h-[475px] lg:flex justify-center items-center relative flex-1 "
         >
-          {" "}
           <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
@@ -103,21 +47,21 @@ const About = () => {
           />
         </motion.div>
         <div className="max-w-7xl mx-auto h-full flex-col lg:flex-row gap-x-6 text-white flex-1">
-          <div className="flex-1 flex flex-col justify-center items-center py-4 space-y-2">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl text-gray-200 font-bold text-center">
+          <div className="flex-1 flex flex-col justify-center items-center py-4 space-y-4">
+            <h2 className="text-3xl md:text-[40px] lg:text-5xl text-gray-200 font-semibold text-center ">
               Captivating stories birth{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">
                 magnificent
               </span>{" "}
               development.
             </h2>
-            <p className="text-gray-300 max-w-lg mx-auto text-center">
+            <p className="text-gray-400 max-w-lg mx-auto text-center">
               In just one year, I initiated my web development journey, working
               on various projects. Today, I proudly identify as a skilled web
               developer.
             </p>
           </div>
-          <div className="flex flex-col items-center min-h-[250px] w-full mt-4">
+          <div className="flex flex-col items-center min-h-[220px] lg:min-h-[250px] w-full mt-4">
             <div className="flex gap-x-4 lg:gap-x-8 mx-auto lg:mx-0 mb-4 ">
               {aboutData.map((item, itemIndex) => (
                 <div

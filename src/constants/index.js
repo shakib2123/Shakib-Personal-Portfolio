@@ -243,3 +243,58 @@ export const ProjectsInfo = [
     server: "https://github.com/shakib2123/brand-shop-server",
   },
 ];
+
+// about data
+export const aboutData = [
+  {
+    title: "skills",
+    info: [
+      {
+        title: "Front-End Development",
+      },
+      {
+        title: "MERN Stack Development",
+      },
+      {
+        title: "Back-End Development",
+      },
+    ],
+  },
+
+  {
+    title: "experience",
+    info: [
+      {
+        title: "Frontend Framework Adoption",
+      },
+      {
+        title: "Accessibility Implementation",
+      },
+      {
+        title: "Responsive Design Complexities",
+      },
+      {
+        title: "Performance Optimization",
+      },
+    ],
+  },
+  {
+    title: "credentials",
+    info: [
+      {
+        title:
+          "College (HSC - Higher Secondary Certificate) - Sengerchar Govt. College",
+        stage: "(2023 - Present)",
+      },
+      {
+        title:
+          "Complete Web Development Course With Jhankar Mahbub - Programming Hero",
+        stage: "(2023 - 2024)",
+      },
+    ],
+  },
+  {
+    title: "Achievements",
+    info: [{ image: "/certificate.png" }],
+  },
+];

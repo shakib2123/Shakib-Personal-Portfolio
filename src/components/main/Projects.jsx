@@ -23,7 +23,7 @@ const Projects = () => {
     >
       {/* text */}
       <div className="space-y-3 text-center sticky top-0 left-0 z-[999] mb-8 lg:mb-4 px-2">
-        <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-pink-500 to-cyan-500 bg-clip-text text-transparent z-50 h-full capitalize">
+        <h1 className="text-3xl md:text-[40px] lg:text-5xl font-semibold bg-gradient-to-r from-pink-500 to-cyan-500 bg-clip-text text-transparent z-50 h-full capitalize">
           Featured Works
         </h1>
         <motion.div
@@ -32,9 +32,9 @@ const Projects = () => {
         ></motion.div>
       </div>
       <div className="px-6 md:px-12 space-y-16">
-      {ProjectsInfo.map((item) => (
-        <ProjectCard key={item.id} item={item} />
-      ))}
+        {ProjectsInfo.map((item) => (
+          <ProjectCard key={item.id} item={item} />
+        ))}
       </div>
     </section>
   );

@@ -60,13 +60,13 @@ const Contact = () => {
         exit={"hidden"}
         className="flex flex-col items-center gap-2 md:gap-4 mb-6"
       >
-        <h2 className="text-4xl md:text-6xl font-bold text-gray-300">
+        <h2 className="text-4xl md:text-[40px] lg:text-6xl font-bold text-gray-200">
           Let&apos;s{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">
             connect.
           </span>
         </h2>
-        <p className="text-gray-200 max-w-xl text-center ">
+        <p className="text-gray-400 max-w-xl text-center ">
           Engage with me, where ideas come to life through meaningful
           conversations. Let&apos;s connect and explore opportunities together!
         </p>
@@ -113,7 +113,7 @@ const Contact = () => {
               <span className="insta-bg BG"></span>
             </button>
           </a>
-          <a href="#">
+          <a href="https://discord.com/channels/md.shakib221">
             <button className="Btn h-[35px] md:h-[40px] w-[35px] md:w-[40px]">
               <span className="svgContainer">
                 <svg

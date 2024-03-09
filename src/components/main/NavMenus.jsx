@@ -2,8 +2,6 @@ import {
   HiHome,
   HiUser,
   HiViewColumns,
-  HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
 import { FaTools } from "react-icons/fa";
@@ -12,11 +10,6 @@ export const navData = [
   { name: "About", path: "#about", icon: <HiUser /> },
   { name: "Skills", path: "#skills", icon: <FaTools /> },
   { name: "Works", path: "#works", icon: <HiViewColumns /> },
-  // {
-  //   name: "Testimonials",
-  //   path: "#testimonials",
-  //   icon: <HiChatBubbleBottomCenterText />,
-  // },
   { name: "Contact", path: "#contact", icon: <HiEnvelope /> },
 ];
 
