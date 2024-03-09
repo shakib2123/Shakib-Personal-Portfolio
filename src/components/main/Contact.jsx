@@ -12,6 +12,8 @@ import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
 import contact from "../../assets/contact.svg";
+import ContactInfo from "../sub/ContactInfo";
+import Divider from "../sub/Divider";
 
 const Contact = () => {
   const ref = useRef();
@@ -70,7 +72,9 @@ const Contact = () => {
           Engage with me, where ideas come to life through meaningful
           conversations. Let&apos;s connect and explore opportunities together!
         </p>
-        <div className="flex gap-8 mt-1">
+        <ContactInfo />
+        <Divider />
+        <div className="flex gap-8">
           <a href="https://web.facebook.com/profile.php?id=100092629614657">
             <button className="Btn h-[35px] md:h-[40px] w-[35px] md:w-[40px]">
               <span className="svgContainer">
@@ -217,7 +221,7 @@ const Contact = () => {
               <textarea
                 placeholder="message"
                 name="message"
-                className="w-full h-[180px] p-6 capitalize rounded-lg resize-none bg-[#3C087E52]/25 focus:bg-[#3C087E52]/45 outline-none focus:ring-1 focus:ring-cyan-500 border border-white/20 placeholder:text-white/30 placeholder:font-light text-gray-100"
+                className="w-full h-[140px] md:h-[180px] p-6 capitalize rounded-lg resize-none bg-[#3C087E52]/25 focus:bg-[#3C087E52]/45 outline-none focus:ring-1 focus:ring-cyan-500 border border-white/20 placeholder:text-white/30 placeholder:font-light text-gray-100"
                 required
               ></textarea>
             </div>

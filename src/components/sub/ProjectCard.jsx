@@ -12,9 +12,7 @@ const ProjectCard = ({ item }) => {
       <div className="flex items-center justify-center h-full w-full overflow-hidden">
         <div className="m-auto h-full flex flex-col lg:flex-row items-center justify-center  gap-2 lg:gap-12">
           <div
-            data-aos="zoom-out-down"
-            data-aos-delay="300"
-            data-aos-duration="500"
+
             className="flex-1 rounded-xl"
           >
             <img

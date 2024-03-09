@@ -16,9 +16,9 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col-reverse lg:flex-row items-center justify-center gap-3 px-4 mt-0 w-full z-40"
+      className="flex flex-col-reverse lg:flex-row items-center justify-center gap-3 px-4 mt-0 w-full "
     >
-      <div className="w-full h-full flex flex-col gap-5 justify-center m-auto text-start ">
+      <div className="w-full h-full flex flex-col gap-5 justify-center m-auto text-start z-50">
         <motion.div
           variants={slideInFromTop}
           className="welcome-box  py-[15px]  px-[10px] border border-[#4042f88b] opacity-[0.9]"

@@ -9,7 +9,7 @@ const Navbar = () => {
       id="home"
       className="w-full  shadow-sm shadow-purple-600  bg-[#03001417] backdrop-blur-sm z-[150]"
     >
-      <div className="max-w-7xl mx-auto px-3 py-4">
+      <div className="max-w-7xl mx-auto px-3 py-3 md:py-4">
         <div className="w-full h-full flex flex-row items-center justify-between m-auto">
           <Avatar />
 
