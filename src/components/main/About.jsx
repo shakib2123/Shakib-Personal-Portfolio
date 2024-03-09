@@ -99,7 +99,7 @@ const About = () => {
           <img
             src={avatar}
             alt="contact image"
-            className="w-[500px] h-full img  absolute top-0"
+            className="w-[500px] h-full absolute top-0"
           />
         </motion.div>
         <div className="max-w-7xl mx-auto h-full flex-col lg:flex-row gap-x-6 text-white flex-1">

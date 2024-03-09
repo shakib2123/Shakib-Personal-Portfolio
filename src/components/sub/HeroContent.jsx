@@ -24,7 +24,7 @@ const HeroContent = () => {
           className="welcome-box  py-[15px]  px-[10px] border border-[#4042f88b] opacity-[0.9]"
         >
           <IoSparkles className="text-[#b49bff] mr-[10px] h-5 w-5 " />
-          <h1 className="welcome-text text-[14px] ">Web Developer Portfolio</h1>
+          <h1 className="welcome-text text-[14px] ">Developer Portfolio</h1>
         </motion.div>
 
         <motion.div
@@ -61,14 +61,23 @@ const HeroContent = () => {
           I&apos;m a Web Developer with experience in responsive and user
           friendly Website development. Check out my projects and skills.
         </motion.p>
-        <motion.a
-          download={"Shakib-Web-Resume"}
-          href="/Shakib-Web-Resume.pdf"
-          variants={slideInFromLeft(1)}
-          className="py-2 md:py-3 px-3 md:px-4 button-primary transition-all duration-300  text-center text-white font-semibold cursor-pointer rounded-lg w-fit border-[3px] border-[#4042f88b]"
-        >
-          Download Resume
-        </motion.a>
+        <div className="flex gap-8">
+          <motion.a
+            download={"Shakib-Web-Resume"}
+            href="/Shakib-Web-Resume.pdf"
+            variants={slideInFromLeft(1.2)}
+            className="py-2 md:py-3 px-3 md:px-4 button-primary transition-all duration-300  text-center text-white font-semibold cursor-pointer rounded-lg w-fit border-[3px] border-[#4042f88b]"
+          >
+            Download Resume
+          </motion.a>
+          <motion.a
+            href="https://github.com/shakib2123?tab=repositories"
+            variants={slideInFromLeft(1)}
+            className="py-2 md:py-3 px-3 md:px-4 button-secondary transition-all duration-300  text-center text-white font-semibold cursor-pointer rounded-lg w-fit border-[3px] border-pink-800"
+          >
+            See All Works
+          </motion.a>
+        </div>
       </div>
 
       <motion.div

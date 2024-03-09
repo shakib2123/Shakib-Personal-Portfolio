@@ -26,8 +26,7 @@ const Contact = () => {
         "S6pui1mHY5mGQipH4"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           Swal.fire({
             title: "Success!",
             text: "Email sent successfully!",
@@ -61,13 +60,13 @@ const Contact = () => {
         exit={"hidden"}
         className="flex flex-col items-center gap-2 md:gap-4 mb-6"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-300">
+        <h2 className="text-4xl md:text-6xl font-bold text-gray-300">
           Let&apos;s{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">
             connect.
           </span>
         </h2>
-        <p className="text-gray-200 max-w-lg text-center ">
+        <p className="text-gray-200 max-w-xl text-center ">
           Engage with me, where ideas come to life through meaningful
           conversations. Let&apos;s connect and explore opportunities together!
         </p>
@@ -98,23 +97,50 @@ const Contact = () => {
               <span className="BG bg-[#181818]"></span>
             </button>
           </a>
+          <a href="https://www.instagram.com/mshakibalhasan21?igsh=MW1nMGVoeDJqZWpzbA==">
+            <button className="Btn h-[35px] md:h-[40px] w-[35px] md:w-[40px]">
+              <span className="svgContainer">
+                <svg
+                  fill="white"
+                  className="svgIcon"
+                  viewBox="0 0 448 512"
+                  height="1.5em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+              </span>
+              <span className="insta-bg BG"></span>
+            </button>
+          </a>
           <a href="#">
             <button className="Btn h-[35px] md:h-[40px] w-[35px] md:w-[40px]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="100"
-                height="100"
-                viewBox="0 0 50 50"
-                className="backdrop-blur-md w-full"
-              >
-                <path
-                  d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"
-                  fill="#ffffff"
-                ></path>
-              </svg>
-              <span className="BG bg-[#1877f2]"></span>
+              <span className="svgContainer">
+                <svg
+                  viewBox="0 0 640 512"
+                  fill="white"
+                  height="1.4em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"></path>
+                </svg>
+              </span>
+              <span className="BG bg-[#7289da]"></span>
+            </button>
+          </a>
+          <a href="#">
+            <button className="Btn h-[35px] md:h-[40px] w-[35px] md:w-[40px]">
+              <span className="svgContainer">
+                <svg
+                  viewBox="0 0 24 24"
+                  height="24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                </svg>
+              </span>
+              <span className="BG bg-[#0077B5]"></span>
             </button>
           </a>
         </div>
@@ -123,7 +149,7 @@ const Contact = () => {
       <div className=" flex flex-col lg:flex-row items-center justify-between gap-4">
         <motion.div
           variants={slideInFromRight(0.4)}
-          className="w-full min-h-[300px] md:min-h-[411px] lg:h-[475px] lg:w-[550px] flex justify-center items-center relative flex-1"
+          className="w-full min-h-[300px] md:min-h-[411px] lg:h-[475px] lg:w-[550px] hidden lg:flex justify-center items-center relative flex-1"
         >
           <Canvas>
             <Suspense fallback={null}>
@@ -147,71 +173,65 @@ const Contact = () => {
           />
         </motion.div>
         {/* text & form */}
-        <div className=" flex flex-col items-center justify-center h-full">
-            {/* form */}
-            <motion.form
-              ref={ref}
-              onSubmit={handleSend}
-              variants={fadeIn("up", 0.5)}
-              initial="hidden"
-              animate="show"
-              exit={"hidden"}
-              className="w-full space-y-4"
-            >
-              <div className="flex gap-4">
-                <div className="space-y-2 text-left">
-                  <label
-                    htmlFor="name"
-                    className="text-gray-200  font-semibold"
-                  >
-                    Your Name*
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    className="w-full h-[52px] rounded-lg pl-6 capitalize bg-[#3C087E52]/25 focus:bg-[#3C087E52]/45  outline-none focus:ring-1 focus:ring-cyan-500 border border-white/20 placeholder:text-white/30 placeholder:font-light text-gray-100"
-                    required
-                  />
-                </div>
-                <div className="space-y-2  text-left">
-                  <label
-                    htmlFor="name"
-                    className="text-gray-200  font-semibold"
-                  >
-                    Your Email*
-                  </label>
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="email"
-                    className="w-full h-[52px] rounded-lg pl-6 capitalize bg-[#3C087E52]/25 focus:bg-[#3C087E52]/45  outline-none focus:ring-1 focus:ring-cyan-500 border border-white/20 placeholder:text-white/30 placeholder:font-light text-gray-100"
-                    required
-                  />
-                </div>
+        <div className=" flex flex-col items-center justify-center h-full mt-6 lg:mt-0">
+          {/* form */}
+          <motion.form
+            ref={ref}
+            onSubmit={handleSend}
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            animate="show"
+            exit={"hidden"}
+            className="w-full space-y-4"
+          >
+            <div className="flex gap-4">
+              <div className="space-y-2 text-left">
+                <label htmlFor="name" className="text-gray-200  font-semibold">
+                  Your Name*
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  className="w-full h-[52px] rounded-lg pl-6 capitalize bg-[#3C087E52]/25 focus:bg-[#3C087E52]/45  outline-none focus:ring-1 focus:ring-cyan-500 border border-white/20 placeholder:text-white/30 placeholder:font-light text-gray-100"
+                  required
+                />
               </div>
               <div className="space-y-2  text-left">
                 <label htmlFor="name" className="text-gray-200  font-semibold">
-                  Your Message*
+                  Your Email*
                 </label>
-                <textarea
-                  placeholder="message"
-                  name="message"
-                  className="w-full h-[180px] p-6 capitalize rounded-lg resize-none bg-[#3C087E52]/25 focus:bg-[#3C087E52]/45 outline-none focus:ring-1 focus:ring-cyan-500 border border-white/20 placeholder:text-white/30 placeholder:font-light text-gray-100"
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="email"
+                  className="w-full h-[52px] rounded-lg pl-6 capitalize bg-[#3C087E52]/25 focus:bg-[#3C087E52]/45  outline-none focus:ring-1 focus:ring-cyan-500 border border-white/20 placeholder:text-white/30 placeholder:font-light text-gray-100"
                   required
-                ></textarea>
+                />
               </div>
+            </div>
+            <div className="space-y-2  text-left">
+              <label htmlFor="name" className="text-gray-200  font-semibold">
+                Your Message*
+              </label>
+              <textarea
+                placeholder="message"
+                name="message"
+                className="w-full h-[180px] p-6 capitalize rounded-lg resize-none bg-[#3C087E52]/25 focus:bg-[#3C087E52]/45 outline-none focus:ring-1 focus:ring-cyan-500 border border-white/20 placeholder:text-white/30 placeholder:font-light text-gray-100"
+                required
+              ></textarea>
+            </div>
 
-              <button
-                type="submit"
-                className="h-12  md:h-14 rounded-full border border-white/50 w-[160px] md:w-[180px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-cyan-600 group text-gray-200 font-bold button-primary"
-              >
-                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                  Let&apos;s talk
-                </span>
-                <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all absolute duration-300 text-[22px]" />
-              </button>
-            </motion.form>
+            <button
+              type="submit"
+              className="h-12  md:h-14 rounded-lg border border-white/50 w-[160px] md:w-[180px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-cyan-600 group text-gray-200 font-bold button-primary"
+            >
+              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                Let&apos;s talk
+              </span>
+              <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all absolute duration-300 text-[22px]" />
+            </button>
+          </motion.form>
         </div>
       </div>
     </div>

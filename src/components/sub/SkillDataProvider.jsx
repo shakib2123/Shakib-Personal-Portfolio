@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const SkillDataProvider = ({ src, width, height, index }) => {
+const SkillDataProvider = ({ src, index }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -21,10 +21,7 @@ const SkillDataProvider = ({ src, width, height, index }) => {
       custom={index}
       transition={{ delay: index * animationDelay }}
     >
-          <img
-              src={src}
-              alt="skill image" className="h-[27px] md:h-14 "
-          />
+      <img src={src} alt="skill image" className="h-[24px] w-[100%] md:h-10 lg:h-14 " />
     </motion.div>
   );
 };
